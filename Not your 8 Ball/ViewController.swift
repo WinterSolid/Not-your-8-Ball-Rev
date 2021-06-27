@@ -8,12 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let Yes =
+    let No = 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func ButtonPressing(_ sender: UIButton) {
+        Bool.random()
+    }
+    
 }
 
