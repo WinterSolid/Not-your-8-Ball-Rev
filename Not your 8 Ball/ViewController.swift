@@ -9,16 +9,26 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let Yes =
-    let No = 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+         
     }
 
+    @IBOutlet weak var yesCoin: UIImageView!
+    @IBOutlet weak var noCoin: UIImageView!
+    
     @IBAction func ButtonPressing(_ sender: UIButton) {
-        Bool.random()
+        let chanceCoinsImage = [ #imageLiteral(resourceName: "noCoin") , #imageLiteral(resourceName: "yesCoin") ]
+            
+        
+   
+        yesCoin.image = chanceCoinsImage.randomElement()
+            
     }
     
 }
+
 

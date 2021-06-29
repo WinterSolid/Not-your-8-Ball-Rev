@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,16 +13,35 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Not_your_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WHALEN-NICK_OF_TIME_1024x1024_5431efcb-91a3-44bf-91d1-7e7ad0f80b56_768x" translatesAutoresizingMaskIntoConstraints="NO" id="95p-X2-Uld">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WHALEN-NICK_OF_TIME_1024x1024_5431efcb-91a3-44bf-91d1-7e7ad0f80b56_768x" translatesAutoresizingMaskIntoConstraints="NO" id="95p-X2-Uld">
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rq5-El-aHb">
-                                <rect key="frame" x="11" y="752" width="391" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="yesCoin" translatesAutoresizingMaskIntoConstraints="NO" id="bIb-Oz-Hhh">
+                                <rect key="frame" x="-86" y="86.666666666666686" width="459" height="241"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="459" id="G8x-Oe-Lm9"/>
+                                    <constraint firstAttribute="height" constant="241" id="rGd-HD-Ar9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" ambiguous="YES" image="noCoin" translatesAutoresizingMaskIntoConstraints="NO" id="sps-s9-KLZ">
+                                <rect key="frame" x="17" y="75" width="289" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="264" id="3L7-Vs-Ia4"/>
+                                    <constraint firstAttribute="width" constant="289" id="ER2-6g-TTr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="289" id="Nfi-l2-W9M"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="264" id="uDE-iR-OE0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rq5-El-aHb">
+                                <rect key="frame" x="261" y="294" width="374" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="WFc-9t-apC"/>
+                                    <constraint firstAttribute="height" constant="75" id="s8M-oh-Wn2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Button" image="carnivalee-freakshow.regular"/>
                                 <connections>
                                     <action selector="ButtonPressing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="unI-s5-2js"/>
@@ -31,16 +50,34 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="95p-X2-Uld" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Aby-sc-g4T"/>
+                            <constraint firstItem="bIb-Oz-Hhh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FoZ-Cb-hKy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rq5-El-aHb" secondAttribute="bottom" constant="39" id="FxV-eq-r9H"/>
+                            <constraint firstItem="sps-s9-KLZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q5U-xr-Meb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rq5-El-aHb" secondAttribute="bottom" constant="24" id="S0E-lM-sC5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="95p-X2-Uld" secondAttribute="bottom" id="THL-MJ-sDU"/>
+                            <constraint firstItem="bIb-Oz-Hhh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-86" id="VqF-8w-c9c"/>
+                            <constraint firstItem="rq5-El-aHb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eTV-oz-zfm"/>
+                            <constraint firstItem="95p-X2-Uld" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jsf-ZU-B54"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="95p-X2-Uld" secondAttribute="trailing" id="ktS-Yy-yia"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="noCoin" destination="sps-s9-KLZ" id="qIf-RV-ooe"/>
+                        <outlet property="yesCoin" destination="sps-s9-KLZ" id="1hw-Ro-UTk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+            <point key="canvasLocation" x="15.942028985507248" y="73.660714285714278"/>
         </scene>
     </scenes>
     <resources>
         <image name="WHALEN-NICK_OF_TIME_1024x1024_5431efcb-91a3-44bf-91d1-7e7ad0f80b56_768x" width="384" height="512"/>
         <image name="carnivalee-freakshow.regular" width="745" height="165"/>
+        <image name="noCoin" width="327" height="310"/>
+        <image name="yesCoin" width="343" height="316"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
