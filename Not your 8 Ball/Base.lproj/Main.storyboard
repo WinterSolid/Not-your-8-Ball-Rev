@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="landscape" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,21 +13,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Not_your_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WHALEN-NICK_OF_TIME_1024x1024_5431efcb-91a3-44bf-91d1-7e7ad0f80b56_768x" translatesAutoresizingMaskIntoConstraints="NO" id="95p-X2-Uld">
-                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="yesCoin" translatesAutoresizingMaskIntoConstraints="NO" id="bIb-Oz-Hhh">
-                                <rect key="frame" x="-86" y="86.666666666666686" width="459" height="241"/>
+                                <rect key="frame" x="-86" y="327.66666666666669" width="459" height="241.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="459" id="G8x-Oe-Lm9"/>
                                     <constraint firstAttribute="height" constant="241" id="rGd-HD-Ar9"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFit" ambiguous="YES" image="noCoin" translatesAutoresizingMaskIntoConstraints="NO" id="sps-s9-KLZ">
-                                <rect key="frame" x="17" y="75" width="289" height="264"/>
+                                <rect key="frame" x="17" y="316" width="289" height="264"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="264" id="3L7-Vs-Ia4"/>
                                     <constraint firstAttribute="width" constant="289" id="ER2-6g-TTr"/>
@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rq5-El-aHb">
-                                <rect key="frame" x="261" y="294" width="374" height="75"/>
+                                <rect key="frame" x="20" y="763" width="374" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="WFc-9t-apC"/>
                                     <constraint firstAttribute="height" constant="75" id="s8M-oh-Wn2"/>
